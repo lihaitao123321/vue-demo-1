@@ -40,8 +40,8 @@ body {
   display: flex;
   /* 纵向排列 */
   flex-direction: column;
-  /* align-items: center; */
-  justify-content: center;
+  align-items: center;
+  /* justify-content: center; */
 }
 .div1 {
   background-color: red;
@@ -57,14 +57,6 @@ body {
   width: 200px;
 }
 .login-container {
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-}
-.content {
-  width: 500px;
-  height: 400px;
-  background-color: white;
-  margin-right: 200px;
+  background-color: green;
 }
 </style>

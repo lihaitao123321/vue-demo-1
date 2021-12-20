@@ -58,13 +58,12 @@ body {
 }
 .login-container {
   display: flex;
-  justify-content: flex-end;
   width: 100%;
+  background-color: green;
 }
 .content {
   width: 500px;
   height: 400px;
   background-color: white;
-  margin-right: 200px;
 }
 </style>

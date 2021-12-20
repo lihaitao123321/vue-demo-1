@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <!-- <div class="div1">
+    <div class="div1">
       111
-    </div> -->
+    </div>
     <!-- <div class="div2">
       222
     </div>
@@ -11,9 +11,6 @@
     </div> -->
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
-    <div class="login-container">
-      <div class="content"></div>
-    </div>
   </div>
 </template>
 
@@ -38,10 +35,9 @@ body {
   background-color: gray;
   height: 100vh;
   display: flex;
-  /* 纵向排列 */
-  flex-direction: column;
+  /*flex-direction: column;纵向排列 */
   /* align-items: center; */
-  justify-content: center;
+  /* justify-content: center; */
 }
 .div1 {
   background-color: red;
@@ -55,16 +51,5 @@ body {
 .div3 {
   background-color: red;
   width: 200px;
-}
-.login-container {
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-}
-.content {
-  width: 500px;
-  height: 400px;
-  background-color: white;
-  margin-right: 200px;
 }
 </style>

@@ -1,10 +1,6 @@
 <template>
-  <div>
-    <div>12313</div>
-    <div></div>
-    <div></div>
-  </div>
-
+  <div></div>
+  <div></div>
   <!-- <div class="hello">
     <h1>{{ msg }}</h1>
     <p>

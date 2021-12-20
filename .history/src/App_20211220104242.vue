@@ -60,6 +60,7 @@ body {
   display: flex;
   justify-content: flex-end;
   width: 100%;
+  background-color: green;
 }
 .content {
   width: 500px;

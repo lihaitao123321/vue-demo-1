@@ -1,7 +1,5 @@
 <template>
   <div>
-    <div>12313</div>
-    <div></div>
     <div></div>
   </div>
 
