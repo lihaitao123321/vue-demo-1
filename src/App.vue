@@ -16,19 +16,24 @@
         <div class="title">tms运输管理系统</div>
         <div class="text1">
           <div class="input-warp">
-            <input />
+            <input v-model="username" />
           </div>
         </div>
         <div class="text2">
           <div class="input-warp">
-            <input />
+            <input :type="showPassword?'text':'password'"
+                   v-model="password" />
           </div>
-          <div class="icon-warp">
-            <img src="./assets/eye-close.png" />
-            <!-- <img :src="require('./assets/eye-close.png')" /> -->
+          <!-- v-on: 是 @ 的完整写法 -->
+          <!-- v-bind: 是 : 的完整写法 -->
+          <div class="icon-warp"
+               v-on:click="clickEye">
+            <!-- <img src="./assets/eye-close.png" /> -->
+            <img :src="showPassword?require('./assets/eye.png'):require('./assets/eye-close.png')" />
           </div>
         </div>
-        <div class="button">登录</div>
+        <div class="button"
+             @click="clickButton">登录</div>
       </div>
     </div>
   </div>
@@ -41,6 +46,27 @@ export default {
   name: 'App',
   components: {
     // HelloWorld
+  },
+  data () {
+    return {
+      username: '17630378060',
+      password: '123321',
+      showPassword: false,
+    }
+  },
+  methods: {
+    clickButton () {
+      // 正则校验账号
+      if (/^1[0-9]{10}$/.test(this.username)) {
+        console.log(666)
+      } else {
+        console.log('手机号错误')
+      }
+      //调用登录接口
+    },
+    clickEye () {
+      this.showPassword = !this.showPassword
+    }
   }
 }
 </script>
@@ -123,6 +149,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 .icon-warp img {
   width: 35px;
