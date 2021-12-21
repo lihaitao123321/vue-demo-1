@@ -24,7 +24,8 @@
             <input />
           </div>
           <div class="icon-warp">
-            <img :src="require('./assets/eye-close.png')" />
+            <img src="./assets/eye-close.png" />
+            <!-- <img :src="require('./assets/eye-close.png')" /> -->
           </div>
         </div>
         <div class="button">登录</div>
@@ -119,7 +120,6 @@ body {
 .icon-warp {
   width: 50px;
   height: 50px;
-  background-color: red;
   display: flex;
   align-items: center;
   justify-content: center;
